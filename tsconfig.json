@@ -14,6 +14,8 @@
         // Allow JSON default imports.
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
         "paths": {
             "@/*": ["src/*"]
         }
