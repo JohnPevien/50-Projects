@@ -1,44 +1,47 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import ProjectWrapper from '@/components/ProjectWrapper.astro';
 ---
 
 <Layout title="Background Slider">
-    <div class="slider-wrapper">
-        <div class="slider-container">
-            <div
-                class="slide active"
-                style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80')"
-            >
-            </div>
-            <div
-                class="slide"
-                style="background-image:url('https://images.unsplash.com/photo-1512273222628-4daea6e55abb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"
-            >
-            </div>
-            <div
-                class="slide"
-                style="background-image:url('https://images.unsplash.com/photo-1536781602098-7ceff4dff60d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"
-            >
-            </div>
-            <div
-                class="slide"
-                style="background-image:url('https://images.unsplash.com/photo-1568005885177-4645086c3e01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80')"
-            >
-            </div>
-            <div
-                class="slide"
-                style="background-image:url('https://plus.unsplash.com/premium_photo-1674331710614-41eab5c75aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80')"
-            >
-            </div>
-            <button class="arrow left-arrow" id="left">
-                <i class="fas fa-arrow-left"></i>
-            </button>
+    <ProjectWrapper>
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <div
+                    class="slide active"
+                    style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80')"
+                >
+                </div>
+                <div
+                    class="slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1512273222628-4daea6e55abb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"
+                >
+                </div>
+                <div
+                    class="slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1536781602098-7ceff4dff60d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"
+                >
+                </div>
+                <div
+                    class="slide"
+                    style="background-image:url('https://images.unsplash.com/photo-1568005885177-4645086c3e01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80')"
+                >
+                </div>
+                <div
+                    class="slide"
+                    style="background-image:url('https://plus.unsplash.com/premium_photo-1674331710614-41eab5c75aab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80')"
+                >
+                </div>
+                <button class="arrow left-arrow" id="left">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
 
-            <button class="arrow right-arrow" id="right">
-                <i class="fas fa-arrow-right"></i>
-            </button>
+                <button class="arrow right-arrow" id="right">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
-    </div>
+    </ProjectWrapper>
 </Layout>
 
 <style is:inline>
