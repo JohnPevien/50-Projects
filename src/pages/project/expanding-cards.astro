@@ -1,54 +1,57 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import ProjectWrapper from '@/components/ProjectWrapper.astro';
 ---
 
 <Layout title="Expanding Cards">
-    <div class="container">
-        <div
-            class="panel active"
-            style="
-          background-image: url(https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
-        "
-        >
-            <h3>The Deep Forest</h3>
-        </div>
+    <ProjectWrapper>
+        <div class="container">
+            <div
+                class="panel active"
+                style="
+              background-image: url(https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+            "
+            >
+                <h3>The Deep Forest</h3>
+            </div>
 
-        <div
-            class="panel"
-            style="
-          background-image: url(https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
-        "
-        >
-            <h3>The Giant Tree</h3>
-        </div>
+            <div
+                class="panel"
+                style="
+              background-image: url(https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+            "
+            >
+                <h3>The Giant Tree</h3>
+            </div>
 
-        <div
-            class="panel"
-            style="
-          background-image: url(https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
-        "
-        >
-            <h3>The Sunset</h3>
-        </div>
+            <div
+                class="panel"
+                style="
+              background-image: url(https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+            "
+            >
+                <h3>The Sunset</h3>
+            </div>
 
-        <div
-            class="panel"
-            style="
-          background-image: url(https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
-        "
-        >
-            <h3>The Snowy Mountains</h3>
-        </div>
+            <div
+                class="panel"
+                style="
+              background-image: url(https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+            "
+            >
+                <h3>The Snowy Mountains</h3>
+            </div>
 
-        <div
-            class="panel"
-            style="
-          background-image: url(https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
-        "
-        >
-            <h3>The Big Lake</h3>
+            <div
+                class="panel"
+                style="
+              background-image: url(https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+            "
+            >
+                <h3>The Big Lake</h3>
+            </div>
         </div>
-    </div>
+    </ProjectWrapper>
 </Layout>
 
 <script is:inline>
@@ -67,20 +70,17 @@ import Layout from '../../layouts/Layout.astro';
     }
 </script>
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        display: flex; /*used since most projects are centered*/
-        margin: 0;
-        height: 100vh; /*to make the height same as the the current whole browser size*
+<style is:inline>
+.project-wrapper {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  display: flex; /*used since most projects are centered*/
+  margin: 0;
+  height: 100vh; /*to make the height same as the the current whole browser size*/
   overflow: hidden; /*to avoid scrollbars*/
-        justify-content: center;
-        align-items: center;
-    }
+  justify-content: center;
+  align-items: center;
+}
 
     .container {
         display: flex;
