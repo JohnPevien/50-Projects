@@ -1,13 +1,16 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import ProjectWrapper from '@/components/ProjectWrapper.astro';
 ---
 
 <Layout title="Notes App">
-    <div class="container">
-        <button class="add" id="add">
-            <i class="fas fa-plus"></i> Add note
-        </button>
-    </div>
+    <ProjectWrapper>
+        <div class="container">
+            <button class="add" id="add">
+                <i class="fas fa-plus"></i> Add note
+            </button>
+        </div>
+    </ProjectWrapper>
 </Layout>
 
 <style is:inline>
