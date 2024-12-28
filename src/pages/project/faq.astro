@@ -1,13 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import ProjectWrapper from '@/components/ProjectWrapper.astro';
 ---
 
 <style is:inline>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
+    .project-wrapper {
         font-family: 'Roboto', sans-serif;
         display: flex; /*used since most projects are centered*/
         margin: 0;
@@ -104,6 +101,7 @@ import Layout from '../../layouts/Layout.astro';
 </style>
 
 <Layout title="FAQ Accordion">
+    <ProjectWrapper class="project-wrapper">
     <h1>Frequently Asked Questions</h1>
     <div class="faq-container">
         <div class="faq">
@@ -155,6 +153,7 @@ import Layout from '../../layouts/Layout.astro';
             </button>
         </div>
     </div>
+</ProjectWrapper>
 </Layout>
 
 <script is:inline>
